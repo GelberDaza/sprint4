@@ -21,7 +21,8 @@ build_histogram = st.checkbox('Construir un histograma')
 
 if build_histogram: # si la casilla de verificación está seleccionada
     st.write('Construir un histograma para la columna odómetro')
-st.header("Diagrama de Dispersion")    
+st.header("Diagrama de Dispersion") 
+hist_button = st.button('Construir Diagrama de Dispersion') # crear un botón   
 if hist_button: # al hacer clic en el botón
             # escribir un mensaje
             st.write('Creación de un Diagrama de Dispersion para el conjunto de datos de anuncios de venta de coches por precio')
@@ -34,5 +35,4 @@ if hist_button: # al hacer clic en el botón
             st.plotly_chart(fig, use_container_width=True) 
             
 
-            # crear una casilla de verificación
-build_histogram = st.checkbox('Diagrama de Dispersion')
+         
